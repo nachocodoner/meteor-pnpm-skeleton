@@ -2,14 +2,15 @@
 
 A minimal Meteor app inside a pnpm monorepo.
 
-This skeleton keeps the Meteor app in `app/` and shared code in `packages/`.
+This skeleton keeps Meteor apps in `apps/` and shared code in `packages/`.
 The app imports the workspace packages with `workspace:*` dependencies.
 
 ## Structure
 
 ```text
 .
-├── app/                 # Meteor application
+├── apps/
+│   └── app/             # Meteor application
 ├── packages/
 │   ├── domain/          # Shared client/server helpers
 │   ├── server-tools/    # Server-only helper package
@@ -21,7 +22,7 @@ The app imports the workspace packages with `workspace:*` dependencies.
 
 ```sh
 corepack pnpm install
-cd app
+cd apps/app
 meteor run
 ```
 
@@ -29,8 +30,8 @@ Open http://localhost:3000.
 
 ## What This Demonstrates
 
-- `app/package.json` depends on local packages with `workspace:*`.
-- `app/rspack.config.cjs` compiles workspace package sources through Rspack.
+- `apps/app/package.json` depends on local packages with `workspace:*`.
+- `apps/app/rspack.config.cjs` compiles workspace package sources through Rspack.
 - The browser renders content imported from `@example/ui` and `@example/shared`.
 - The server imports `@example/shared` and `@example/server`.
 

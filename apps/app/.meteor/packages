@@ -1,19 +1,16 @@
 # Meteor packages used by this project, one per line.
 # Check this file (and the other files in this directory) into your repository.
 
-meteor-base@1.5.2
-mobile-experience@1.1.2
-reactive-var@1.0.13
+meteor-base
+mobile-experience
+reactive-var
 
 standard-minifier-css
 standard-minifier-js
-es5-shim@4.8.1
-ecmascript@0.18.0
-typescript@5.10.0
+es5-shim
+ecmascript
+typescript
 shell-server
-hot-module-replacement@0.6.0
+hot-module-replacement
 
-static-html@1.5.0
-dynamic-import
-underscore
-rspack
+static-html
