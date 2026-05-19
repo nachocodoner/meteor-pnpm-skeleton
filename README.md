@@ -5,6 +5,11 @@ A minimal Meteor app inside a pnpm monorepo.
 This skeleton keeps Meteor apps in `apps/` and shared code in `packages/`.
 The app imports the workspace packages with `workspace:*` dependencies.
 
+## Requirements
+
+- Meteor 3.4 onwards
+- Rspack integration (see [Modern Build Stack docs](https://docs.meteor.com/about/modern-build-stack/rspack-bundler-integration.html))
+
 ## Structure
 
 ```text
