@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+.pnpm-debug.log*
+
+# Meteor
+.meteor/local/
+app/.meteor/local/
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build outputs
+dist/
+build/
